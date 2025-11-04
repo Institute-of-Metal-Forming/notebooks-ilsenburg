@@ -21,7 +21,7 @@ uv run jupyter lab
 
 ### Running in Google Colab
 
-Click on the batch beneath the notebooks listed below to open them in Colab. Remember to always run the cell labeled with `# only for Google Colab` to install required dependencies and fetch required additional files.
+Click on the badge beneath the notebooks listed below to open them in Colab. Remember to always run the cell labeled with `# only for Google Colab` to install required dependencies and fetch required additional files.
 
 - Parameter Fitting of Emprical Flow Stress Models (Freiberg Model) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flow-stress/Freiberg.ipynb)
 - Parameter Fitting of Emprical Flow Stress Models (Sellars-Tegart Model) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flow-stress/SellarsTegart.ipynb)

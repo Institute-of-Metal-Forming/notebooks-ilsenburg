@@ -16,7 +16,7 @@ Then, run the Jupyter Lab server with the command line below and open the displa
 uv run jupyter lab
 ```
 
-> [WARNING]
+> [!WARNING]
 > Do not execute the cells labeled with `# only for Google Colab` when working this way or unnecessary/destructive files will be created in your local copy.
 
 ### Running in Google Colab

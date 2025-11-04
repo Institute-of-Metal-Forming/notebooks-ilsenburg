@@ -2,6 +2,8 @@
 
 ## How to Use
 
+### Running From a Local Copy
+
 Download or clone the contents of the repository, then create a virtual environment holding the respective dependencies with [uv](https://docs.astral.sh/uv) with:
 
 ```shell
@@ -17,7 +19,7 @@ uv run jupyter lab
 > [WARNING]
 > Do not execute the cells labeled with `# only for Google Colab` when working this way or unnecessary/destructive files will be created in your local copy.
 
-## Using Google Colab
+### Running in Google Colab
 
 Click on the batch beneath the notebooks listed below to open them in Colab. Remember to always run the cell labeled with `# only for Google Colab` to install required dependencies and fetch required additional files.
 

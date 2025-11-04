@@ -23,3 +23,10 @@ repos:
       hooks:
           - id: uv-lock
           - id: uv-export
+            args:
+                [
+                    "--no-dev",
+                    "--frozen",
+                    "--output-file=requirements.txt",
+                    "--quiet",
+                ]

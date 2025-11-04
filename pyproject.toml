@@ -1,20 +1,20 @@
 [project]
-name = "notebooks-flow-stress"
+name = "notebooks-ilsenburg"
 version = "0.1.0"
 description = ""
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "jupyter",
-    "jupytext",
     "numpy~=2.0",
-    "plotly~=5.0",
+    "plotly~=6.0",
     "scipy~=1.15",
     "pandas~=2.0",
-    "scikit-learn>=1.6.1",
+    "scikit-learn~=1.6",
 ]
 
 [dependency-groups]
 dev = [
+    "jupyter",
+    "jupytext",
     "pre-commit~=4.1.0",
 ]

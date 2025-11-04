@@ -2,9 +2,11 @@ import numpy as np
 from dataclasses import dataclass
 from typing import Optional
 
+
 @dataclass
 class FreibergFlowStressCoefficients:
-    """ Class representing the Freiberg flow stress model published by Hensel et al. """
+    """Class representing the Freiberg flow stress model published by Hensel et al."""
+
     a: Optional[float]
     m1: Optional[float] = 0
     m2: Optional[float] = 0
@@ -20,7 +22,12 @@ class FreibergFlowStressCoefficients:
     baseStrainRate: Optional[float] = 0.1
 
 
-def flow_stress(strain, coefficients: FreibergFlowStressCoefficients, strain_rate: float, temperature: float):
+def flow_stress(
+    strain,
+    coefficients: FreibergFlowStressCoefficients,
+    strain_rate: float,
+    temperature: float,
+):
     """
     Calculates the flow stress according to the model from the provided coefficients, strain, strain rate and temperature.
 
@@ -34,13 +41,28 @@ def flow_stress(strain, coefficients: FreibergFlowStressCoefficients, strain_rat
     strain = strain + coefficients.baseStrain
     strain_rate = strain_rate + coefficients.baseStrainRate
     temperature = temperature - 273.15
-    return (coefficients.a * np.exp(coefficients.m1 * temperature) * (strain ** coefficients.m2) *
-            (strain_rate ** coefficients.m3) * np.exp(coefficients.m4 / strain) *
-            ((1 + strain) ** (coefficients.m5 * temperature)) *
-            ((1 + strain) ** coefficients.m6) * np.exp(coefficients.m7 * strain) *
-            (strain_rate ** (coefficients.m8 * temperature)) * (temperature ** coefficients.m9))
+    return (
+        coefficients.a
+        * np.exp(coefficients.m1 * temperature)
+        * (strain**coefficients.m2)
+        * (strain_rate**coefficients.m3)
+        * np.exp(coefficients.m4 / strain)
+        * ((1 + strain) ** (coefficients.m5 * temperature))
+        * ((1 + strain) ** coefficients.m6)
+        * np.exp(coefficients.m7 * strain)
+        * (strain_rate ** (coefficients.m8 * temperature))
+        * (temperature**coefficients.m9)
+    )
 
-def flow_stress_difference(x: float, coefficients: FreibergFlowStressCoefficients, strain_rate: float, temperature: float, starting_height: float, flow_stress_second):
+
+def flow_stress_difference(
+    x: float,
+    coefficients: FreibergFlowStressCoefficients,
+    strain_rate: float,
+    temperature: float,
+    starting_height: float,
+    flow_stress_second,
+):
     """
     Calculates the flow stress according to the model from the provided coefficients, strain, strain rate and temperature.
 
@@ -51,11 +73,21 @@ def flow_stress_difference(x: float, coefficients: FreibergFlowStressCoefficient
     returns: the flow stress in Pa
     """
 
-    strain = np.log(starting_height/x) + coefficients.baseStrain
+    strain = np.log(starting_height / x) + coefficients.baseStrain
     strain_rate = strain_rate + coefficients.baseStrainRate
     temperature = temperature - 273.15
-    return -(coefficients.a * np.exp(coefficients.m1 * temperature) * (strain ** coefficients.m2) *
-            (strain_rate ** coefficients.m3) * np.exp(coefficients.m4 / strain) *
-            ((1 + strain) ** (coefficients.m5 * temperature)) *
-            ((1 + strain) ** coefficients.m6) * np.exp(coefficients.m7 * strain) *
-            (strain_rate ** (coefficients.m8 * temperature)) * (temperature ** coefficients.m9)) + flow_stress_second
+    return (
+        -(
+            coefficients.a
+            * np.exp(coefficients.m1 * temperature)
+            * (strain**coefficients.m2)
+            * (strain_rate**coefficients.m3)
+            * np.exp(coefficients.m4 / strain)
+            * ((1 + strain) ** (coefficients.m5 * temperature))
+            * ((1 + strain) ** coefficients.m6)
+            * np.exp(coefficients.m7 * strain)
+            * (strain_rate ** (coefficients.m8 * temperature))
+            * (temperature**coefficients.m9)
+        )
+        + flow_stress_second
+    )

@@ -10,7 +10,7 @@ koeff_ni_cold = FreibergFlowStressCoefficients(
     m6=0,
     m7=0,
     m8=0,
-    m9=0
+    m9=0,
 )
 
 koeff_ti_warm = FreibergFlowStressCoefficients(
@@ -23,39 +23,23 @@ koeff_ti_warm = FreibergFlowStressCoefficients(
     m6=0,
     m7=-0.43501,
     m8=0.000186,
-    m9=0
+    m9=0,
 )
 
 koeff_almg25_cold_v1 = FreibergFlowStressCoefficients(
-    a=153.939,
-    m1=-0.00182,
-    m2=0.22160,
-    m3=0.02950,
-    m4=0.00210
+    a=153.939, m1=-0.00182, m2=0.22160, m3=0.02950, m4=0.00210
 )
 
 koeff_almg25_cold_v2 = FreibergFlowStressCoefficients(
-    a=179.756,
-    m1=-0.00283,
-    m2=0.18870,
-    m3=0.04334,
-    m4=-0.00571
+    a=179.756, m1=-0.00283, m2=0.18870, m3=0.04334, m4=-0.00571
 )
 
 koeff_almg15_cold = FreibergFlowStressCoefficients(
-    a=217.519,
-    m1=-0.00096,
-    m2=0.15361,
-    m3=0.01201,
-    m4=0.00040
+    a=217.519, m1=-0.00096, m2=0.15361, m3=0.01201, m4=0.00040
 )
 
 koeff_almg3_v1_cold = FreibergFlowStressCoefficients(
-    a=270.102,
-    m1=-0.00098,
-    m2=0.11837,
-    m3=-0.00533,
-    m4=-0.00380
+    a=270.102, m1=-0.00098, m2=0.11837, m3=-0.00533, m4=-0.00380
 )
 
 koeff_trip = FreibergFlowStressCoefficients(
@@ -68,7 +52,7 @@ koeff_trip = FreibergFlowStressCoefficients(
     m6=0,
     m7=-0.365104,
     m8=-0.00000345044,
-    m9=1.39308
+    m9=1.39308,
 )
 
 koeff_twip = FreibergFlowStressCoefficients(
@@ -81,5 +65,5 @@ koeff_twip = FreibergFlowStressCoefficients(
     m6=0,
     m7=-0.371706,
     m8=0.000058272,
-    m9=1.27846
+    m9=1.27846,
 )

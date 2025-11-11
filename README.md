@@ -30,6 +30,9 @@ Click on the badge beneath the notebooks listed below to open them in Colab.
 - Parameter Fitting of Emprical Flow Stress Models (Sellars-Tegart Model) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flow-stress/SellarsTegart.ipynb)
 - Parameter Fitting of Emprical Flow Stress Models (Artificial Neural Network Model) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flow-stress/NeuralNetwork.ipynb)
 - Predict Hot Flow Stress Curves Qualitively by Using Avrami Recrystallisation Model [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flow-stress/LutonSellarsHotFlowStressModelling.ipynb)
+- Flat Rolling with PyRolL [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/flat-rolling/pyroll-flat-rolling.ipynb)
+- Elastic Response of the Roll (Roll-Flattening) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/roll-flattening/roll_flattening_hitchcock.ipynb)
+- Elastic Response of the Rolling Mill (Mill Spring) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/institute-of-metal-forming/notebooks-ilsenburg/blob/master/elastic-mill-spring/elastic_mill_spring.ipynb)
 
 
 ## License

@@ -21,7 +21,7 @@ uv run jupyter lab
 
 ### Running in Google Colab
 
-Click on the badge beneath the notebooks listed below to open them in Colab. 
+Click on the badge beneath the notebooks listed below to open them in Colab.
 
 > [!IMPORTANT]
 > Remember to always run the cell labeled with `# only for Google Colab` to install required dependencies and fetch required additional files.
